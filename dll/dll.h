@@ -1,0 +1,17 @@
+/* header file for doubly linked list*/
+
+typdef struct dll_node_ {
+	void* data;
+	struct dll_node_* left;
+	struct dll_node_* right;
+} dll_node_t;
+
+typdef struct dll_{
+	dll_node_t* head;
+} dll_t;
+
+/* Public Function declaration to create and return
+ *  /* a new empty doubly linked list*/
+dll_t* get_new_dll();
+
+int add_data_to_dll (dll_t* dll, void* app_data);
