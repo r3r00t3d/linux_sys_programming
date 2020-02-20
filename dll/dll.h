@@ -1,5 +1,6 @@
 /* header file for doubly linked list*/
-
+#ifndef DLL_H
+#define DLL_H
 typedef struct dll_node_ {
 	void* data;
 	struct dll_node_* left;
@@ -15,3 +16,4 @@ typedef struct dll_{
 dll_t* get_new_dll();
 
 int add_data_to_dll (dll_t* dll, void* app_data);
+#endif
